@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Rakhi Across the Distance ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- =========================
+     BACKGROUND MUSIC
+========================= -->
+
+<audio id="bgMusic" loop>
+    <source src="music/phoolon.mp3.mpeg" type="audio/mpeg">
+</audio>
+
+<body>
+
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
+
+    <section id="loadingScreen" class="loading-screen">
+
+        <!-- Stars -->
+        <div class="stars"></div>
+        <div class="stars stars-two"></div>
+
+        <!-- Moon -->
+        <div class="moon">
+            <div class="moon-crater crater-one"></div>
+            <div class="moon-crater crater-two"></div>
+            <div class="moon-crater crater-three"></div>
+        </div>
+
+        <!-- Shooting Stars -->
+        <div class="shooting-star star-one"></div>
+        <div class="shooting-star star-two"></div>
+        <div class="shooting-star star-three"></div>
+
+        <!-- Floating Hearts -->
+        <div class="floating-hearts">
+            <span>♡</span>
+            <span>❤️</span>
+            <span>♡</span>
+            <span>💗</span>
+            <span>♡</span>
+            <span>❤️</span>
+        </div>
+
+        <!-- Main Content -->
+        <div class="loading-content">
+
+            <div class="small-stars">
+                ✦ &nbsp; ✧ &nbsp; ✦
+            </div>
+
+            <h1>
+                Some bonds don't need
+                <br>
+                distance to stay close...
+            </h1>
+
+            <div class="heart-symbol">
+                ♡
+            </div>
+
+            <p>
+                A little Raksha Bandhan surprise
+                <br>
+                for my dearest sister ❤️
+            </p>
+
+            <!-- Loading Bar -->
+            <div class="loader-container">
+
+                <div class="loader-bar">
+                    <div id="loaderProgress"></div>
+                </div>
+
+                <div class="loading-text">
+                    <span id="loadingPercent">0%</span>
+                    <span>Preparing your surprise...</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+     STEP 2 - WELCOME SCREEN
+========================== -->
+
+<section id="welcomeScreen" class="welcome-screen">
+
+    <!-- Background glow -->
+    <div class="welcome-glow glow-one"></div>
+    <div class="welcome-glow glow-two"></div>
+
+    <!-- Floating hearts -->
+    <div class="welcome-hearts">
+        <span>♡</span>
+        <span>❤️</span>
+        <span>♡</span>
+        <span>💗</span>
+        <span>♡</span>
+        <span>❤️</span>
+        <span>♡</span>
+    </div>
+
+    <!-- Main content -->
+    <div class="welcome-content">
+
+        <div class="welcome-stars">
+            ✦ &nbsp; ✧ &nbsp; ✦
+        </div>
+
+        <p class="welcome-small-text">
+            A little surprise from your brother
+        </p>
+
+        <h1>
+            Happy Raksha Bandhan
+        </h1>
+
+        <h2>
+            My Dearest Sister <span>❤️</span>
+        </h2>
+
+        <div class="welcome-divider">
+            <span>♡</span>
+            <div></div>
+            <span>♡</span>
+        </div>
+
+        <p class="welcome-message">
+            For the sister who's miles away,
+            <br>
+            but never far from my heart.
+        </p>
+
+        <button id="openGiftBtn" class="gift-button">
+            <span>Open Your Rakhi Gift</span>
+            <span class="gift-icon">🎁</span>
+        </button>
+
+        <p class="distance-text">
+            Made with love
+        </p>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STEP 3 - VIRTUAL RAKHI
+===================================================== -->
+
+<section id="rakhiScreen" class="rakhi-screen">
+
+    <!-- Background particles -->
+    <div class="rakhi-particles">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+    </div>
+
+
+    <!-- Main content -->
+    <div class="rakhi-content">
+
+        <div class="rakhi-top-decoration">
+            ✦ &nbsp; ✧ &nbsp; ✦
+        </div>
+
+        <p class="rakhi-small-title">
+            A little piece of love
+        </p>
+
+        <h1>
+            For You, Sis ❤️
+        </h1>
+
+
+        <!-- Rakhi -->
+        <div class="rakhi-wrapper">
+
+            <div class="rakhi-glow"></div>
+
+            <div id="rakhi" class="rakhi">
+
+                <!-- Left thread -->
+                <div class="rakhi-thread thread-left"></div>
+
+                <!-- Right thread -->
+                <div class="rakhi-thread thread-right"></div>
+
+                <!-- Rakhi center -->
+                <div class="rakhi-center">
+
+                    <div class="rakhi-flower flower-outer">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                        <div class="rakhi-flower flower-inner">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                            <div class="rakhi-gem">
+                                ❤️
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Message -->
+        <p class="rakhi-message">
+
+            This Rakhi may be digital,
+            <br>
+
+            but the love behind it is real.
+
+        </p>
+
+
+        <!-- Button -->
+        <button
+            id="tieRakhiBtn"
+            class="tie-rakhi-button"
+        >
+
+            <span>🧿</span>
+
+            Tie The Rakhi
+
+            <span>❤️</span>
+
+        </button>
+
+
+        <!-- After tying -->
+        <div
+            id="rakhiSuccess"
+            class="rakhi-success"
+        >
+
+            <div class="success-heart">
+                ❤️
+            </div>
+
+            <h2>
+                Rakhi Tied! 🧵❤️
+            </h2>
+
+            <p>
+                No matter how far you are,
+                <br>
+                you'll always have your brother.
+            </p>
+
+            <button
+                id="continueMemoryBtn"
+                class="continue-button"
+            >
+                Continue to Our Memories →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STEP 4 - OUR MEMORIES
+===================================================== -->
+
+<section id="memoriesScreen" class="memories-screen">
+
+    <div class="memory-bg-glow glow-left"></div>
+    <div class="memory-bg-glow glow-right"></div>
+
+    <div class="memories-content">
+
+        <div class="memory-decoration">
+            ✦ &nbsp; 📸 &nbsp; ✦
+        </div>
+
+        <p class="memory-small-title">
+            Little moments, forever memories
+        </p>
+
+        <h1>Our Little World ❤️</h1>
+
+        <p class="memory-intro">
+            Some memories don't need a rewind...
+            <br>
+            they live in our hearts forever.
+        </p>
+
+
+        <!-- PHOTO GRID -->
+
+        <div class="memory-grid">
+
+            <!-- Memory 1 -->
+            <div
+                class="memory-card card-one"
+                data-image="images/memories/memory1.jpg.jpeg"
+                data-caption="One of those moments I'll always keep close ❤️"
+            >
+                <div class="photo-wrapper">
+                    <img
+                        src="images/memories/memory1.jpg.jpeg"
+                        alt="Memory 1"
+                    >
+                    <div class="photo-overlay">
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <p>Forever a special memory ❤️</p>
+            </div>
+
+
+            <!-- Memory 2 -->
+            <div
+                class="memory-card card-two"
+                data-image="images/memories/memory2.jpg.jpeg"
+                data-caption="No matter how much time passes, this memory still makes me smile."
+            >
+                <div class="photo-wrapper">
+                    <img
+                        src="images/memories/memory2.jpg.jpeg"
+                        alt="Memory 2"
+                    >
+                    <div class="photo-overlay">
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <p>A memory worth keeping 💕</p>
+            </div>
+
+
+            <!-- Memory 3 -->
+            <div
+                class="memory-card card-three"
+                data-image="images/memories/memory3.jpg.jpeg"
+                data-caption="The little moments are sometimes the biggest memories."
+            >
+                <div class="photo-wrapper">
+                    <img
+                        src="images/memories/memory3.jpg.jpeg"
+                        alt="Memory 3"
+                    >
+                    <div class="photo-overlay">
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <p>Little moments, big memories ✨</p>
+            </div>
+
+
+            <!-- Memory 4 -->
+            <div
+                class="memory-card card-four"
+                data-image="images/memories/memory4.jpg.jpeg"
+                data-caption="Different days, same bond. Always."
+            >
+                <div class="photo-wrapper">
+                    <img
+                        src="images/memories/memory4.jpg.jpeg"
+                        alt="Memory 4"
+                    >
+                    <div class="photo-overlay">
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <p>Distance can't change us 🫂</p>
+            </div>
+
+
+            <!-- Memory 5 -->
+            <div
+                class="memory-card card-five"
+                data-image="images/memories/memory5.jpg.jpeg"
+                data-caption="No distance can ever erase these memories."
+            >
+                <div class="photo-wrapper">
+                    <img
+                        src="images/memories/memory5.jpg.jpeg"
+                        alt="Memory 5"
+                    >
+                    <div class="photo-overlay">
+                        <span>♡</span>
+                    </div>
+                </div>
+
+                <p>Always my sister ❤️</p>
+            </div>
+
+        </div>
+
+
+        <!-- Continue -->
+
+       <button id="memoryContinueBtn" class="memory-continue-btn">
+    Continue ❤️
+</button>
+
+    </div>
+
+
+    <!-- FULLSCREEN PHOTO VIEWER -->
+
+    <div
+        id="photoViewer"
+        class="photo-viewer"
+    >
+
+        <button
+            id="closeViewer"
+            class="close-viewer"
+        >
+            ×
+        </button>
+
+        <button
+            id="previousPhoto"
+            class="photo-nav previous"
+        >
+            ‹
+        </button>
+
+        <div class="viewer-content">
+
+            <img
+                id="viewerImage"
+                src=""
+                alt="Memory"
+            >
+
+            <p id="viewerCaption"></p>
+
+        </div>
+
+        <button
+            id="nextPhoto"
+            class="photo-nav next"
+        >
+            ›
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STEP 5 - THINGS I MISS ABOUT YOU
+===================================================== -->
+
+<section id="missScreen" class="miss-screen">
+
+    <div class="miss-stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>✧</span>
+        <span>♡</span>
+    </div>
+
+    <div class="miss-content">
+
+        <p class="miss-small-title">
+            A few things from my heart
+        </p>
+
+        <h1>
+            Things I Miss About You 💭
+        </h1>
+
+        <p class="miss-intro">
+            Distance makes you realize how precious
+            <br>
+            the little things really are.
+        </p>
+
+
+        <!-- MISS CARDS -->
+
+        <div class="miss-cards">
+
+            <div class="miss-card">
+                <div class="miss-icon">💬</div>
+
+                <h2>Your Random Talks</h2>
+
+                <p>
+                    I miss all those random conversations
+                    that somehow made ordinary days special.
+                </p>
+            </div>
+
+
+            <div class="miss-card">
+                <div class="miss-icon">😂</div>
+
+                <h2>Your Silly Jokes</h2>
+
+                <p>
+                    Even the silly moments feel special
+                    when you're not here to share them.
+                </p>
+            </div>
+
+
+            <div class="miss-card">
+                <div class="miss-icon">🏠</div>
+
+                <h2>Having You Around</h2>
+
+                <p>
+                    Sometimes I simply miss knowing
+                    that my sister is right there.
+                </p>
+            </div>
+
+
+            <div class="miss-card">
+                <div class="miss-icon">❤️</div>
+
+                <h2>The Little Moments</h2>
+
+                <p>
+                    The small everyday moments are the ones
+                    I find myself remembering the most.
+                </p>
+            </div>
+
+        </div>
+
+
+        <!-- FINAL MESSAGE -->
+
+        <div class="miss-final">
+
+            <div class="miss-heart">
+                ❤️
+            </div>
+
+            <p>
+                And honestly...
+            </p>
+
+            <h2>
+                I just miss having my sister close.
+            </h2>
+
+        </div>
+
+
+        <!-- CONTINUE -->
+
+        <button
+            id="missContinueBtn"
+            class="miss-continue-btn"
+        >
+            There's Something I Want To Tell You →
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STEP 6 - HEARTFELT LETTER
+===================================================== -->
+
+<section id="letterScreen" class="letter-screen">
+
+    <!-- Background -->
+    <div class="letter-stars">
+        <span>✦</span>
+        <span>✧</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>✦</span>
+    </div>
+
+    <div class="letter-glow letter-glow-one"></div>
+    <div class="letter-glow letter-glow-two"></div>
+
+    <!-- Content -->
+    <div class="letter-content">
+
+        <div class="letter-decoration">
+            ✦　♡　✦
+        </div>
+
+        <p class="letter-small-title">
+            A little something from my heart
+        </p>
+
+        <h1>
+            For My Sister 💌
+        </h1>
+
+        <p class="letter-intro">
+            Some feelings are too special to say in just a few words...
+        </p>
+
+        <!-- Envelope -->
+        <div class="envelope-wrapper">
+
+            <div class="envelope-glow"></div>
+
+            <div id="letterEnvelope" class="envelope">
+
+                <div class="envelope-back"></div>
+
+                <div class="letter-paper">
+
+                    <div class="letter-paper-content">
+
+                        <p class="letter-greeting">
+                            Dear Sister,
+                        </p>
+
+                        <p>
+                            No matter how far away you are,
+                            you will always have a special place
+                            in my heart.
+                        </p>
+
+                        <p>
+                            I miss our little moments, our talks,
+                            our laughter, and all those memories
+                            that became precious without us even
+                            realizing it.
+                        </p>
+
+                        <p>
+                            Distance may keep us apart for now,
+                            but it can never change the bond
+                            between a brother and his sister.
+                        </p>
+
+                        <p class="letter-ending">
+                            Happy Raksha Bandhan ❤️
+                        </p>
+
+                        <p class="letter-sign">
+                            Always your brother,
+                            <br>
+                            With lots of love ❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="envelope-front"></div>
+
+                <div class="envelope-flap"></div>
+
+            </div>
+
+        </div>
+
+        <!-- Open Button -->
+        <button id="openLetterBtn" class="open-letter-button">
+            💌 Open My Letter
+        </button>
+
+        <!-- Continue -->
+        <button
+            id="letterContinueBtn"
+            class="letter-continue-btn">
+            Continue ✨
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ================= SURPRISE SCREEN ================= -->
+
+<!-- =====================================================
+     STEP 7 - SURPRISE SCREEN
+===================================================== -->
+
+<section class="surprise-screen" id="surpriseScreen">
+
+    <div class="surprise-content">
+
+        <!-- Heading -->
+        <div class="surprise-decoration">
+            ✦ &nbsp; 💝 &nbsp; ✦
+        </div>
+
+        <p class="surprise-small-text">
+            You made it this far...
+        </p>
+
+        <h1>
+            One Last<br>
+            Surprise 🎁
+        </h1>
+
+        <p class="surprise-message">
+            But before we finish...
+            <br>
+            there's something waiting for you.
+        </p>
+
+
+        <!-- Gift -->
+        <div
+            class="gift-container"
+            id="giftBox"
+        >
+
+            <div class="gift-lid">
+
+                <div class="ribbon"></div>
+
+            </div>
+
+            <div class="gift-box">
+
+                <div class="ribbon"></div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Open Button -->
+        <button
+            id="openSurprise"
+            class="open-surprise-btn"
+        >
+            Open My Surprise 💝
+        </button>
+
+
+        <!-- Surprise Reveal -->
+        <div
+            id="surpriseReveal"
+            class="surprise-reveal"
+        >
+
+            <div class="reveal-sparkles">
+                ✨ 💖 ✨
+            </div>
+
+            <div class="reveal-heart">
+                ❤️
+            </div>
+
+            <p class="reveal-small-text">
+                A little reminder...
+            </p>
+
+            <h2>
+                Distance can never change
+                <br>
+                how special you are to me.
+            </h2>
+
+            <p class="reveal-message">
+                You're not just my sister.
+                <br>
+                You're one of my favourite people
+                in this world. 🫂
+            </p>
+
+
+            <!-- Go To Game -->
+            <button
+                id="startGameBtn"
+                class="start-game-btn"
+            >
+                Okay... Give Me The Game 🎮
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     STEP 8 - QUESTION GAME
+===================================================== -->
+
+<section class="game-screen" id="gameScreen">
+
+    <div class="game-container">
+
+        <div class="game-decoration">
+            ✦ &nbsp; 🎮 &nbsp; ✦
+        </div>
+
+        <p class="game-small-title">
+            A little sibling challenge 😄
+        </p>
+
+        <h1>
+            How Well Do You<br>
+            Know Your Brother? ❤️
+        </h1>
+
+        <p class="game-intro">
+            Let's see how well you know me!
+        </p>
+
+        <!-- Progress -->
+
+        <div class="quiz-progress">
+
+            <div class="progress-info">
+
+                <span id="questionNumber">
+                    Question 1 of 5
+                </span>
+
+                <span id="scoreText">
+                    Score: 0
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div
+                    id="quizProgress"
+                    class="progress-fill">
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Question -->
+
+        <div
+            id="questionCard"
+            class="question-card">
+
+            <div
+                id="questionEmoji"
+                class="question-emoji">
+                🤔
+            </div>
+
+            <h2 id="questionText">
+                Question
+            </h2>
+
+            <div
+                id="answerContainer"
+                class="answer-container">
+            </div>
+
+        </div>
+
+
+        <!-- Result -->
+
+        <div
+            id="quizResult"
+            class="quiz-result">
+
+            <div class="result-emoji">
+                🎉
+            </div>
+
+            <h2>
+                Quiz Complete!
+            </h2>
+
+            <p id="resultScore">
+                You got 0/5!
+            </p>
+
+            <p id="resultMessage">
+                You really know your brother! ❤️
+            </p>
+
+            <button
+                id="finalRevealBtn"
+                class="final-reveal-btn">
+                See My Final Message ❤️
+            </button>
+
+        </div>
+
+
+        <!-- Final Message -->
+
+        <div
+            id="finalMessage"
+            class="final-message">
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <p>
+                And after everything...
+            </p>
+
+            <h2>
+                You'll always be<br>
+                my lovely big sister. 🫂
+            </h2>
+
+            <p>
+                No matter the distance,<br>
+                our bond will always remain.
+            </p>
+
+            <div class="final-rakhi">
+                🧵❤️🧵
+            </div>
+
+            <h3>
+                Happy Raksha Bandhan ❤️
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
